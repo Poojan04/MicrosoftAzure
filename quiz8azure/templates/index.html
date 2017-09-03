@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lastquiz</title>
+</head>
+<body>
+<table border="2px">
+    <tr><td>NAME</td><td>CITY</td><td>STATE</td></tr>
+    {% for obj in tableData %}
+        <tr>
+
+<td>{{obj.filename}}</td>
+<td>{{obj.cusine}}</td>
+</td>
+<td> {{timeDifference}}</td>
+<img src = "https://hasithaimages.blob.core.windows.net/hasithaimagefiles/{{obj.filename}}.jpg">
+{{obj.filename}}
+</td> </tr> {% endfor %}
+</table>
+
+
+</body>
+</html>
